@@ -1,0 +1,53 @@
+:root {
+    --color-fondo: #141e30;
+    --color-fuente:  #f0f0f5;
+    --font1: 1.2em;
+    --font2: 2em;
+    --bs-warning: #e67300;
+}
+
+body {   background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+
+#logo {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.3em;
+    color: var(--bs-warning);
+}
+
+a:hover:not(#logo) {
+    color: var(--bs-warning)!important;
+}
+
+.tecno-logos { width: 150px; }
+
+.mi-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+input, textarea {
+    background: linear-gradient(to right, #141e30, #243b55)!important;
+    border: 2px solid var(--color-fondo)!important;
+    outline: #333333;
+    width: 600px!important;
+}
+
+textarea { resize: none; }
+
+input:focus, textarea:focus {
+    border: 2px solid var(--bs-warning)!important;
+}
+
+.btn:hover {
+    border: 2px solid var(--bs-warning)!important;
+    color: var(--bs-warning)!important;
+    font-size: var(--font1)!important;
+}
+
+.sobremi-img { width: 100%;}
+
+@media screen and (max-width:1024px){
+    a{ text-align: center!important; }
+ /*   body { width: 100%!important; }*/
+}
